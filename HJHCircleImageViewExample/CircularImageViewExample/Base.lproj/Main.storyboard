@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A261i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HJHViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="FYC-KK-yM4" customClass="HJHCircleImageView">
+                                <rect key="frame" x="20" y="28" width="136" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FYC-KK-yM4" secondAttribute="height" multiplier="1:1" id="kH7-lo-WHb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleBorderWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dog" translatesAutoresizingMaskIntoConstraints="NO" id="8J0-9D-tHV" customClass="HJHCircleImageView">
+                                <rect key="frame" x="164" y="28" width="136" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8J0-9D-tHV" secondAttribute="height" multiplier="1:1" id="fte-5Y-aev"/>
+                                </constraints>
+                            </imageView>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FaceOnWall" translatesAutoresizingMaskIntoConstraints="NO" id="QLb-uo-T0B" customClass="HJHCircleImageView">
+                                <rect key="frame" x="20" y="172" width="280" height="280"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QLb-uo-T0B" secondAttribute="height" multiplier="1:1" id="XDE-26-B7e"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8J0-9D-tHV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" symbolic="YES" id="74t-ka-LyB"/>
+                            <constraint firstItem="QLb-uo-T0B" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="HoG-hY-tRJ"/>
+                            <constraint firstItem="FYC-KK-yM4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Ikj-qD-PEC"/>
+                            <constraint firstAttribute="trailing" secondItem="QLb-uo-T0B" secondAttribute="trailing" constant="20" symbolic="YES" id="JXq-1b-fys"/>
+                            <constraint firstAttribute="trailing" secondItem="8J0-9D-tHV" secondAttribute="trailing" constant="20" symbolic="YES" id="MNV-b2-ru1"/>
+                            <constraint firstItem="FYC-KK-yM4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" symbolic="YES" id="bQ0-68-YhC"/>
+                            <constraint firstItem="QLb-uo-T0B" firstAttribute="top" secondItem="8J0-9D-tHV" secondAttribute="bottom" constant="8" symbolic="YES" id="hy0-0K-8xO"/>
+                            <constraint firstItem="8J0-9D-tHV" firstAttribute="leading" secondItem="FYC-KK-yM4" secondAttribute="trailing" constant="8" symbolic="YES" id="iZK-mR-5Ij"/>
+                            <constraint firstItem="FYC-KK-yM4" firstAttribute="width" secondItem="8J0-9D-tHV" secondAttribute="width" id="vLF-KT-jzo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dog" width="320" height="223"/>
+        <image name="FaceOnWall" width="320" height="240"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
